@@ -1,40 +1,40 @@
-# 2024-1 c mentoring homework
+# 2024-1 mentoring homework
 
-## °úÁ¦ Á¦Ãâ ¹æ¹ı
+## ê³¼ì œ ì œì¶œ ë°©ë²•
 
-1. ÇØ´ç repositoryÀÇ urlÀ» º¹»çÇÑ µÚ local¿¡¼­ cloneÇÑ´Ù. 
+1. í•´ë‹¹ repositoryì˜ urlì„ ë³µì‚¬í•œ ë’¤ localì—ì„œ cloneí•œë‹¤. 
 ```shell
 git clone ${url}
 ```
-2. commit ½Ã ½Ã¿ëÇÒ name°ú emailÀ» ¼³Á¤ÇÑ´Ù. (ÀÚ½ÅÀÇ github °èÁ¤¿¡ µî·ÏµÈ ¸ŞÀÏ°ú ÀÌ¸§)
+2. commit ì‹œ ì‹œìš©í•  nameê³¼ emailì„ ì„¤ì •í•œë‹¤. (ìì‹ ì˜ github ê³„ì •ì— ë“±ë¡ëœ ë©”ì¼ê³¼ ì´ë¦„)
 ```shell
-git config user.name "${ÀÌ¸§}"
+git config user.name "${ì´ë¦„}"
 git config user.email "${space email}"
 ```
-3. ÀÚ½ÅÀÇ ÀÌ¸§°ú °úÁ¦¹øÈ£¸¦ ÀÌ¿ëÇØ branch¸¦ »ı¼ºÇÑ´Ù.
+3. ìì‹ ì˜ ì´ë¦„ê³¼ ê³¼ì œë²ˆí˜¸ë¥¼ ì´ìš©í•´ branchë¥¼ ìƒì„±í•œë‹¤.
 ```shell
-git branch --show-current # branch È®ÀÎ
+git branch --show-current # branch í™•ì¸
 git checkout main # branch change
 git checout -b ${branch name} # create new branch
 ```
-4. ÇÁ·ÎÁ§Æ® ÆÄÀÏ ³»¿¡ ÀÚ½ÅÀÇ ÀÌ¸§À¸·Î µÈ Æú´õ¿¡ ÇØ´ç ÁÖÂ÷ °úÁ¦¸¦ ¼öÇàÇÑ´Ù.
-5. °úÁ¦°¡ ¿Ï·áµÇ¸é Á¦ÃâÇÏ±â À§ÇØ commitÀ» ÁøÇàÇÑ´Ù. ÀÌ¶§ commit comment´Â ÀÚÀ¯·Ó°Ô ÀÛ¼ºÇÑ´Ù. 
+4. í”„ë¡œì íŠ¸ íŒŒì¼ ë‚´ì— ìì‹ ì˜ ì´ë¦„ìœ¼ë¡œ ëœ í´ë”ì— í•´ë‹¹ ì£¼ì°¨ ê³¼ì œë¥¼ ìˆ˜í–‰í•œë‹¤.
+5. ê³¼ì œê°€ ì™„ë£Œë˜ë©´ ì œì¶œí•˜ê¸° ìœ„í•´ commitì„ ì§„í–‰í•œë‹¤. ì´ë•Œ commit commentëŠ” ììœ ë¡­ê²Œ ì‘ì„±í•œë‹¤. 
 ```shell
 git add ${file name} # or git add .
 git commit -m "commit comment"
 ```
-6. commitÀÌ ¿Ï·áµÇ¸é ÀÚ½ÅÀÌ ¸¸µç remote repository¿¡ push
+6. commitì´ ì™„ë£Œë˜ë©´ ìì‹ ì´ ë§Œë“  remote repositoryì— push
 ```shell
 git push oirgin #{working branch name}
 ```
-7. ÀÚ½ÅÀÌ ÀÛ¼ºÇÑ brach¸¦ ½ÇÁ¦ repository¿¡ ¹İ¿µÇÏ±â À§ÇØ pr »ı¼º. 
+7. ìì‹ ì´ ì‘ì„±í•œ brachë¥¼ ì‹¤ì œ repositoryì— ë°˜ì˜í•˜ê¸° ìœ„í•´ pr ìƒì„±. 
 
-  + repository¿¡ Á¢¼Ó ÈÄ pull request¸¦ Å¬¸¯ÇÏ¿© ÀÚ½ÅÀÇ »õ·Î¿î pull request¸¦ ÀÛ¼ºÇÒ ¼ö ÀÖÀ½.
-  + reviewer¿¡ ¸àÅä µî·Ï
-  + ÀÌ¶§ description¿¡ ÄÚµå ºĞ¼® ³»¿ëÀ» ÀÛ¼º. Áú¹®ÀÌ ÀÖÀ¸¸é description¿¡ ÇÔ²² ÀÛ¼ºÇÏ°Å³ª comment·Î Ãß°¡ÇÏ°Å³ª µû·Î ¿¬¶ô.  
+  + repositoryì— ì ‘ì† í›„ pull requestë¥¼ í´ë¦­í•˜ì—¬ ìì‹ ì˜ ìƒˆë¡œìš´ pull requestë¥¼ ì‘ì„±í•  ìˆ˜ ìˆìŒ.
+  + reviewerì— ë©˜í†  ë“±ë¡
+  + ì´ë•Œ descriptionì— ì½”ë“œ ë¶„ì„ ë‚´ìš©ì„ ì‘ì„±. ì§ˆë¬¸ì´ ìˆìœ¼ë©´ descriptionì— í•¨ê»˜ ì‘ì„±í•˜ê±°ë‚˜ commentë¡œ ì¶”ê°€í•˜ê±°ë‚˜ ë”°ë¡œ ì—°ë½.  
 
-8. ¸àÅä°¡ approveÇÏ´Â °æ¿ì squase merge¸¦ ÅëÇØ merge.
-9. merge ÀÌÈÄ local ¼Ò½º ÄÚµå¸¦ ÃÖ½ÅÈ­ÇÏ±â À§ÇØ ¼öÁ¤ »çÇ×À» local¿¡ ¹İ¿µ
+8. ë©˜í† ê°€ approveí•˜ëŠ” ê²½ìš° squase mergeë¥¼ í†µí•´ merge.
+9. merge ì´í›„ local ì†ŒìŠ¤ ì½”ë“œë¥¼ ìµœì‹ í™”í•˜ê¸° ìœ„í•´ ìˆ˜ì • ì‚¬í•­ì„ localì— ë°˜ì˜
 ```shell
 git checkout main
 git pull origin main
