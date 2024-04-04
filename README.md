@@ -25,7 +25,7 @@ git commit -m "commit comment"
 ```
 6. commit이 완료되면 자신이 만든 remote repository에 push
 ```shell
-git push oirgin #{working branch name}
+git push oirgin ${working branch name}
 ```
 7. 자신이 작성한 brach를 실제 repository에 반영하기 위해 pr 생성. 
 
